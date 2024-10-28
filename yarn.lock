@@ -1576,16 +1576,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chromatic-com/storybook@npm:1":
-  version: 1.4.0
-  resolution: "@chromatic-com/storybook@npm:1.4.0"
+"@chromatic-com/storybook@npm:3":
+  version: 3.2.0
+  resolution: "@chromatic-com/storybook@npm:3.2.0"
   dependencies:
-    chromatic: "npm:^11.3.2"
+    "@storybook/channels": "npm:^8.3.0"
+    "@storybook/telemetry": "npm:^8.3.0"
+    "@storybook/types": "npm:^8.3.0"
+    chromatic: "npm:^11.15.0"
     filesize: "npm:^10.0.12"
     jsonfile: "npm:^6.1.0"
     react-confetti: "npm:^6.1.0"
     strip-ansi: "npm:^7.1.0"
-  checksum: 10c0/4b4ae546358b46d1a515fb5eb7110263eda9f59062702aea3deabd27a0f1554c778a2735d26824080ed9e833890808afbd603b89cc093bda83b7de96ad4102fd
+  peerDependencies:
+    storybook: "*"
+  checksum: 10c0/59485e69a55df6b1998e19bf0e129fa1f9a86d3ae541f4dcb6f6dd945e7b9a6258ce75e244aaa73821039cef8c57424402a3c0bf63a66b4511a2ac0b5611103b
   languageName: node
   linkType: hard
 
@@ -3067,6 +3072,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/channels@npm:^8.3.0":
+  version: 8.3.6
+  resolution: "@storybook/channels@npm:8.3.6"
+  peerDependencies:
+    storybook: ^8.3.6
+  checksum: 10c0/3c34ed2b03c60c6ed1160d9a0efdb836be892e333556848ff492c16ab6d92521207512670d42f69d681f521e50f130a00f692610a3ca63228a8d2b49be57f4fa
+  languageName: node
+  linkType: hard
+
 "@storybook/cli@npm:8.1.1":
   version: 8.1.1
   resolution: "@storybook/cli@npm:8.1.1"
@@ -3638,6 +3652,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/telemetry@npm:^8.3.0":
+  version: 8.3.6
+  resolution: "@storybook/telemetry@npm:8.3.6"
+  peerDependencies:
+    storybook: ^8.3.6
+  checksum: 10c0/b4fd8d0e238335249aa82dea49bde56813e0c771e67dd7110fb9e038d1e2bd64aa03e76ee865ef6a7f0fd5220d02bd7bcf3273bb4c19403e3d527d9dd7a258d4
+  languageName: node
+  linkType: hard
+
 "@storybook/test@npm:8.1.1":
   version: 8.1.1
   resolution: "@storybook/test@npm:8.1.1"
@@ -3684,6 +3707,15 @@ __metadata:
     "@types/express": "npm:^4.7.0"
     file-system-cache: "npm:2.3.0"
   checksum: 10c0/63826b12c41de507ca8241e139b1afb689ea744d7dfb72271a92f6c0065e52ff55dbb0b0bbf5fc5bc8ece3915d8ca1899ec833525340cca820015c3ffecb3f95
+  languageName: node
+  linkType: hard
+
+"@storybook/types@npm:^8.3.0":
+  version: 8.3.6
+  resolution: "@storybook/types@npm:8.3.6"
+  peerDependencies:
+    storybook: ^8.3.6
+  checksum: 10c0/482f55e34877f9eb94a8ff4627a254f3b5442f91f13363e6837e3a9c220a369be1c6ce4652b870b7fa4e522c3365825651f9e04a21bda76b104a6c1f7435e274
   languageName: node
   linkType: hard
 
@@ -6156,9 +6188,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:^11.3.2":
-  version: 11.3.5
-  resolution: "chromatic@npm:11.3.5"
+"chromatic@npm:^11.15.0":
+  version: 11.16.1
+  resolution: "chromatic@npm:11.16.1"
   peerDependencies:
     "@chromatic-com/cypress": ^0.*.* || ^1.0.0
     "@chromatic-com/playwright": ^0.*.* || ^1.0.0
@@ -6171,7 +6203,7 @@ __metadata:
     chroma: dist/bin.js
     chromatic: dist/bin.js
     chromatic-cli: dist/bin.js
-  checksum: 10c0/79022edd2b3a685cd3166dac886a47a2bf87d72f4b553d04ccab9a19bd784eabdf5e6f906796a7b645f9b2094ab585c2be7ff01a208a3af6fbf495b33adce634
+  checksum: 10c0/bd0b5ba68d44a9947677690e9fc72bcf76c4b4069580ed763900befd207e20baad22f45a9a1e46468ddeb6f0f867a33ee37149041c66991d088ca2cfb8c3fa42
   languageName: node
   linkType: hard
 
@@ -11680,7 +11712,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-electron-boilerplate@workspace:."
   dependencies:
-    "@chromatic-com/storybook": "npm:1"
+    "@chromatic-com/storybook": "npm:3"
     "@storybook/addon-essentials": "npm:^8.1.1"
     "@storybook/addon-interactions": "npm:^8.1.1"
     "@storybook/addon-links": "npm:^8.1.1"
